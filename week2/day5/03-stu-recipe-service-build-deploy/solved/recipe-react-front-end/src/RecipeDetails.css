@@ -1,0 +1,54 @@
+#ingredientTitle {
+  text-align: center;
+}
+
+#ingredients {
+  text-align: left;
+  width: 100%;
+}
+
+#ingredients td, #ingredients th {
+  border: 1px solid;
+  padding: 10px;
+}
+
+#prepStepTitle {
+  text-align: center;
+}
+
+#prepSteps {
+  text-align: left;
+  width: 100%;
+}
+
+#prepSteps td, #prepSteps th {
+  border: 1px solid;
+  padding: 10px;
+}
+
+#ratingsTitle {
+  text-align: center;
+}
+
+#ratings {
+  text-align: left;
+  width: 100%;
+}
+
+#ratings td, #ratings th {
+  border: 1px solid;
+  padding: 10px;
+}
+
+#deleteButton {
+  margin: 0 10px 0 0;
+}
+
+#detailsButton {
+  margin: 0 0 0 10px;
+}
+
+#buttonPanel {
+  text-align: center;
+  margin: 50px 0;
+}
