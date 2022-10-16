@@ -1,9 +1,18 @@
 package com.company.CustomerAPI.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Objects;
-
-public class Address {
-
+//@Entity
+//@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+//@Table(name = "address")
+public class Address implements Serializable {
+//    @Id
+//    @Column(name = "address_id")
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    private Integer id;
     private String street;
     private String city;
     private String state;

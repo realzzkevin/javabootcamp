@@ -1,18 +1,14 @@
 package com.company.CustomerAPI.controller;
 
-import com.company.CustomerAPI.model.Address;
 import com.company.CustomerAPI.model.Customer;
-import com.company.CustomerAPI.repository.CustomerRepository;
 import com.company.CustomerAPI.services.ServiceLayer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
-import java.util.Arrays;
+
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping(value = "/customer")
@@ -106,6 +102,7 @@ public class CustomerController {
 //        return customerList.stream()
 //                .filter(customer -> customer.getAddress().getState().equals(state))
 //                .collect(Collectors.toList());
+        return null;
     }
 
 }

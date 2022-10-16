@@ -35,10 +35,10 @@ public class CustomerControllerTest {
     @Before
     public void setUp() throws Exception {
         address1 = new Address("main", "New York", "NY", "10000");
-        customer1 = new Customer(5, "John", "Walker", address1, "Gold");
+        customer1 = new Customer( "John", "Walker", address1, "Gold");
 
         address2 = new Address("anywhere", "Night City", "AZ", "34567");
-        customer2 = new Customer(6, "Johnny", "Silverhand", address2, "Silver");
+        customer2 = new Customer( "Johnny", "Silverhand", address2, "Silver");
     }
 
     @Test

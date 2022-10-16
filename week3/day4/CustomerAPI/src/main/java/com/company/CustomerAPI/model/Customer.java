@@ -5,12 +5,13 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 import javax.persistence.*;
 
 import javax.validation.constraints.NotNull;
+import java.io.Serializable;
 import java.util.Objects;
 
 @Entity
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 @Table(name="customer")
-public class Customer {
+public class Customer implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "customer_id")
@@ -20,14 +21,14 @@ public class Customer {
     @Column(name = "lastname")
     private String lastName;
 
+//    @JoinColumn(name = "address")
     private Address address;
 
     private String level;
 
     public Customer(){}
 
-    public Customer(Integer id, String firstName, String lastName, Address address, String level) {
-        this.id = id;
+    public Customer(String firstName, String lastName, Address address, String level) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
