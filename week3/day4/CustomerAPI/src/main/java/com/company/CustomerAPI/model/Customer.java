@@ -1,10 +1,8 @@
 package com.company.CustomerAPI.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import org.springframework.boot.autoconfigure.domain.EntityScan;
 import javax.persistence.*;
 
-import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.Objects;
 

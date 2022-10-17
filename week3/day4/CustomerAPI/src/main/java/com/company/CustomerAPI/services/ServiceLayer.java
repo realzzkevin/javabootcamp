@@ -1,8 +1,6 @@
 package com.company.CustomerAPI.services;
 
-import com.company.CustomerAPI.model.Address;
 import com.company.CustomerAPI.model.Customer;
-//import com.company.CustomerAPI.repository.AddressRepository;
 import com.company.CustomerAPI.repository.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
