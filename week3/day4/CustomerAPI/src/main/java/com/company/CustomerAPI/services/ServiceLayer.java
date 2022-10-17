@@ -1,6 +1,8 @@
 package com.company.CustomerAPI.services;
 
+import com.company.CustomerAPI.model.Address;
 import com.company.CustomerAPI.model.Customer;
+//import com.company.CustomerAPI.repository.AddressRepository;
 import com.company.CustomerAPI.repository.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,7 +13,7 @@ import java.util.Optional;
 @Service
 public class ServiceLayer {
     private CustomerRepository repo;
-    
+
     @Autowired
     public ServiceLayer(CustomerRepository repo) {
         this.repo = repo;
@@ -22,6 +24,7 @@ public class ServiceLayer {
     }
 
     public Customer createCustomer(Customer customer) {
+
         return repo.save(customer);
     }
 
@@ -43,4 +46,9 @@ public class ServiceLayer {
 
         return repo.findByLevel(level);
     }
+
+    public List<Customer> findByState(String state) {
+        return repo.findByAddressState(state);
+    }
+
 }

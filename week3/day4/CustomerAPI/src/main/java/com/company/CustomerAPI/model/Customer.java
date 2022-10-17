@@ -22,6 +22,7 @@ public class Customer implements Serializable {
     private String lastName;
 
 //    @JoinColumn(name = "address")
+    @Embedded
     private Address address;
 
     private String level;

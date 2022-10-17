@@ -8,6 +8,7 @@ import java.util.Objects;
 //@Entity
 //@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 //@Table(name = "address")
+@Embeddable
 public class Address implements Serializable {
 //    @Id
 //    @Column(name = "address_id")
@@ -16,6 +17,7 @@ public class Address implements Serializable {
     private String street;
     private String city;
     private String state;
+    @Column(name = "zipcode")
     private String zipCode;
 
     public Address(){}

@@ -10,4 +10,6 @@ import java.util.List;
 public interface CustomerRepository extends JpaRepository<Customer, Integer> {
 
     List<Customer> findByLevel(String level);
+
+    List<Customer> findByAddressState(String state);
 }
